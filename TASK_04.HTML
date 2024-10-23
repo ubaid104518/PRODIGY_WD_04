@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TASK_4.css">
+    <title>UBAIDUR RAHMAN - Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>UBAIDUR RAHMAN</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="U.jpg" alt="UBAIDUR RAHMAN" class="profile-photo">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a passionate web developer skilled in creating dynamic and responsive web applications.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About Me</h3>
+        <p>I have a background in computer Applications, with a degree in MCA from Measi Institute of Information Technology. Over the past 2 years, I have gained experience in web development, working on various projects that have honed my skills in web development skills.</p>
+        <h4>Education</h4>
+        <ul>
+            <li>MCA in Computer Applications from Measi Institute of Information Technology, 2025</li>
+            <!-- Add more education if necessary -->
+        </ul>
+        <h4>Professional Experience</h4>
+        <ul>
+            <li>WEB DEVELOPMENT at PRODIGY - 15 OCT 2024 to 15 NOV 2024</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h3>My Projects</h3>
+        <div class="project">
+            <h4>TIC-TAC-TOE</h4>
+            <p>Short description of the project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h4>STOPWATCH</h4>
+            <p>Short description of the project.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Add more projects as necessary -->
+    </section>
+
+    <section id="skills">
+        <h3>My Skills</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Responsive Design</li>
+            <!-- Add more skills as necessary -->
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">ubaidurrahman2831@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: Smooth scrolling for navigation links
+        const links = document.querySelectorAll('nav a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
